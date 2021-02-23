@@ -6,7 +6,7 @@ orbs:
 ### JOBS
 jobs:
   test:
-    executor: lighthouse-check/default
+    executor: lighthouse-check
     steps:
       - lighthouse-check/audit:
           apiToken: $LIGHTHOUSE_CHECK_API_TOKEN
