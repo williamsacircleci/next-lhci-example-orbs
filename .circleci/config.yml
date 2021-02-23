@@ -7,6 +7,12 @@ defaults: &defaults
 orbs:
   lighthouse-ci: orbies/lighthouse-ci@0.1.0
 
+### EXECUTORS
+executors:
+  lighthouse-server:
+    docker:
+      - image: orbies/lighthouse-ci@0.1.0
+
 ### JOBS
 jobs:
   checkout_code:
@@ -70,7 +76,7 @@ jobs:
 
       - run: npm run test
   perf:
-    executor: lighthouse-ci
+    executor: lighthouse-server
     steps:
     - attach_workspace:
         at: ~/repo
