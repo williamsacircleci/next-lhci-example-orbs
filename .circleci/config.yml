@@ -5,7 +5,7 @@ defaults: &defaults
 
 ### ORBS
 orbs:
-  lighthouse-ci: orbies/lighthouse-ci@0.1.0
+  lighthouse-check: foo-software/lighthouse-check@0.0.8
 
 ### EXECUTORS
 executors:
@@ -76,7 +76,7 @@ jobs:
 
       - run: npm run test
   perf:
-    executor: lighthouse-server
+    executor: lighthouse-check
     steps:
     - attach_workspace:
         at: ~/repo
