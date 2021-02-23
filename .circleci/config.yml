@@ -5,7 +5,7 @@ defaults: &defaults
 
 ### ORBS
 orbs:
-  lighthouse-check: foo-software/lighthouse-check@0.0.8
+  lighthouse-check: foo-software/lighthouse-check@0.0.13
 
 ### EXECUTORS
 executors:
