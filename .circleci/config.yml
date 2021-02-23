@@ -5,7 +5,7 @@ defaults: &defaults
 
 ### ORBS
 orbs:
-  lighthouse-check: foo-software/lighthouse-check@0.0.13
+  lighthouse-ci: orbies/lighthouse-ci@0.1.0
 
 ### JOBS
 jobs:
