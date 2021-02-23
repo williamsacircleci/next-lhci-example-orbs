@@ -1,0 +1,20 @@
+
+### ORBS
+orbs:
+  lighthouse-check: foo-software/lighthouse-check@0.0.8
+
+### JOBS
+jobs:
+  test:
+    executor: lighthouse-check/default
+    steps:
+      - lighthouse-check/audit:
+          apiToken: $LIGHTHOUSE_CHECK_API_TOKEN
+          urls: 'heycar.co.uk,https://heycar.co.uk/audi'
+
+### WORKFLOWS         
+version: 2.1
+workflows:
+  test:
+    jobs:
+      - test
