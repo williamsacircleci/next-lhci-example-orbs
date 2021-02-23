@@ -86,9 +86,10 @@ jobs:
           echo
           lhci autorun
 
-### WORKFLOWS         
+### WORKFLOWS 
+
+version: 2.1
 workflows:
-  version: 2.1
   build-and-test:
     jobs:
     - checkout_code:
