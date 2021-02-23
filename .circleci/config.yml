@@ -10,7 +10,7 @@ jobs:
     steps:
       - lighthouse-check/audit:
           apiToken: $LIGHTHOUSE_CHECK_API_TOKEN
-          urls: 'heycar.co.uk,https://heycar.co.uk/audi'
+          urls: 'https://heycar.co.uk,https://heycar.co.uk/audi'
 
 ### WORKFLOWS         
 version: 2.1
