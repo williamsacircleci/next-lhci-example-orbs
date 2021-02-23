@@ -1,12 +1,12 @@
 
 ### ORBS
 orbs:
-  lighthouse-check: sebasrodriguez/lighthouse-check@0.1.0
+  lighthouse-check: foo-software/lighthouse-check@0.0.13
 
 ### JOBS
 jobs:
   test:
-    executor: lighthouse-check
+    executor: lighthouse-check/default
     steps:
       - lighthouse-check/audit:
           apiToken: $LIGHTHOUSE_CHECK_API_TOKEN
